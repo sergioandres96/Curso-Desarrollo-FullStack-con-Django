@@ -14,7 +14,8 @@ function ServicesList({posts,section_title}){
           </div>
           <div className="mx-auto mt-14  grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
             {posts.map((post) => (
-              <ServicesCard/>
+              <ServicesCard data={post}/>
+
             ))}
           </div>
         </div>
